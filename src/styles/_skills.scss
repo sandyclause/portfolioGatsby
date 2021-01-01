@@ -30,16 +30,7 @@
         text-align: center;
         padding: 30px 10px;
         flex: 1 1 220px;
-        
-        &:hover {
-            border-radius: 10px;
-            transition: all 0.5s;
-            transform: scale(1.5);
-
-            .skillsTitle {
-                color: $white;
-            }
-        }
+        color: $white;
         
         .fa-react {
             color: #892582;
@@ -73,7 +64,6 @@
         .skillsTitle {
             font-size: 2rem;
             font-weight: 700;
-            color: $blackBackground;
         }
     }
 }
