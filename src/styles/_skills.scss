@@ -1,0 +1,110 @@
+.skillsSection {
+    background: $blackBackground;
+    color: #ffffff;
+    padding: 160px 0 140px;
+
+}
+
+.sectionTitleContainer {
+    text-align: center;
+
+    .sectionTitle {
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+    .sectionSubtitle {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+}
+
+.skillsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 50px;
+    justify-content: space-evenly;
+
+
+    .skillCard {
+        margin: 35px;
+        text-align: center;
+        padding: 30px 10px;
+        flex: 1 1 220px;
+        
+        &:hover {
+            border-radius: 10px;
+            transition: all 0.5s;
+            transform: scale(1.5);
+
+            .skillsTitle {
+                color: $white;
+            }
+        }
+        
+        .fa-react {
+            color: #892582;
+        }
+        .fa-js {
+            color: #f86b18;
+        }
+        .fa-html5 {
+            color: #0095c8;
+        }
+        .fa-css3-alt {
+            color: #97ca85;
+        }
+        .fa-code-branch {
+            color: #872480;
+        }
+        .fa-github {
+            color: #f7bdc6;
+        }
+        .fa-sass {
+            color: #0095c8;
+        }
+        .fa-gulp {
+            color: #f5b211;
+        }
+
+        .fab, .fas {
+            font-size: 16rem;
+        }
+
+        .skillsTitle {
+            font-size: 2rem;
+            font-weight: 700;
+            color: $blackBackground;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    #skills {
+        padding: 30px 0;
+    }
+}
+
+@media(max-width: 860px) {
+    .skillsContainer {
+        .fab, .fas {
+            font-size: 12rem !important;
+        }
+        .skillCard {
+            flex: 1 1 80px !important;
+        }
+
+    }
+}
+
+@media(max-width: 480px) {
+    .skillsContainer {
+        .fab, .fas {
+            font-size: 8rem !important;
+        }
+        .skillCard {
+            flex: 1 1 20px !important;
+            margin: 0 !important;
+        }
+
+    }
+}

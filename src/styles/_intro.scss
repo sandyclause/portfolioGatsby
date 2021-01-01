@@ -1,0 +1,56 @@
+.intro {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.introContainer {
+    text-align: center;
+    padding-top: 195px;
+
+    h1 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #333333;
+        margin: 0;
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #4d4d4d;
+        margin: 0;
+        padding: 20px 0 40px;
+    }
+    p {
+        font-family: $secondary-font;
+        font-size: 1.6rem;
+        color: #4c4c4d;
+        font-weight: 300;
+        max-width: 450px;
+        margin: 0;
+    }
+}
+
+.introSocial {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 65px 0 120px;
+
+    p {
+        color: #333333;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .social {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+
+        .fab {
+            color: #999999;
+            margin: 0px 10px;
+        }
+    }
+}

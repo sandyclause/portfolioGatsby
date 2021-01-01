@@ -1,0 +1,130 @@
+.portfolioSection {
+    padding: 150px 0 120px;
+}
+
+.workContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .leftGroup, .rightGroup {
+        display: flex;
+        flex-flow: column nowrap;
+
+        flex: 1 1 auto;
+        max-width: 540px;
+    }
+
+    .rightGroup {
+        margin-top: 240px;
+        margin-bottom: 490px;
+    }
+}
+
+.work {
+    flex: 1 1 300px;
+    margin: 60px 0;
+    transition: all 0.3s;
+    transform: scale(1);
+    border-radius: 10px;
+
+    .workImg {
+        position: relative;
+
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        figcaption {
+            position: absolute;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: none;
+            background-color: $transparentOrange;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+
+
+            a {
+                color: $white;
+                margin: 0;
+            }
+
+            p {
+                font-size: 3rem;
+            }
+            .fas {
+                font-size: 5rem;
+            }
+        }
+
+        &:hover {
+
+            figcaption {
+                display: flex;
+            }
+        }
+    }
+
+    &:hover {
+        transition: all 0.5s;
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px $textGray;
+    }
+
+    .workDescription {
+        position: relative;
+        padding: 10px 30px;
+        h1 {
+            font-weight: 700;
+            font-size: 3.6rem;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            font-size: 2rem;
+            padding: 0;
+            justify-content: space-around;
+
+            li {
+                margin: 10px 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $orange;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px)  {
+    .work {
+        transform: none !important;
+    }
+    .workContainer {
+        justify-content: space-around;
+        margin: 0 15px;
+        
+        .leftGroup, .rightGroup {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #work {
+        padding: 30px 0;
+    }
+}

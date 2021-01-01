@@ -1,0 +1,301 @@
+.contact {
+
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+
+        .contactForm, .aboutImgSection {
+            padding: 60px 0;
+        }
+    }
+}
+
+.contactForm {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    flex: 2 1 300px;
+
+    .sectionTitleContainer {
+        text-align: left;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-right: 110px;
+        margin: 0px 110px 30px 0;
+
+        font-size: 2rem;
+
+
+        textarea {
+            font-size:18px;
+            padding:10px 10px 10px 5px;
+            display:block;
+            width:100%;
+            border:none;
+            resize: none;
+            border-bottom:1px solid $orange;
+        }
+
+        .group { 
+            position:relative; 
+            margin-bottom:45px; 
+        }
+        input {
+            font-size:18px;
+            padding:10px 10px 10px 5px;
+            display:block;
+            width:100%;
+            border:none;
+            border-bottom:1px solid $orange;
+        }
+        input:focus { 
+            outline:none; 
+        }
+        label {
+            color:#999; 
+            font-size:18px;
+            font-weight:normal;
+            position:absolute;
+            pointer-events:none;
+            left:5px;
+            top:10px;
+            transition:0.2s ease all; 
+        }
+
+        /* active state */
+        input:focus ~ label, input:valid ~ label {
+            top:-20px;
+            font-size:14px;
+            color:#5264AE;
+        }  
+        textarea:focus ~ label, textarea:valid ~ label {
+            top:-20px;
+            font-size:14px;
+            color:#5264AE;
+        }
+        .bar   { position:relative; display:block; width:100%; }
+        .bar:before, .bar:after {
+            content:'';
+            height:2px; 
+            width:0;
+            bottom:1px; 
+            position:absolute;
+            background:$orange; 
+            transition:0.2s ease all; 
+        }
+        .bar:before  {
+            left:50%;
+        }
+        .bar:after  {
+            right:50%; 
+        }
+
+        /* active state */
+        input:focus ~ .bar:before, input:focus ~ .bar:after  {
+            width:50%;
+        }
+        textarea:focus ~ .bar:before, textarea:focus ~ .bar:after  {
+            width:50%;
+        }
+
+        .highlight  {
+            position:absolute;
+            height:60%; 
+            width:100px; 
+            top:25%; 
+            left:0;
+            pointer-events:none;
+            opacity:0.5;
+        }
+
+        /* active state */
+        input:focus ~ .highlight  {
+            animation:inputHighlighter 0.3s ease;
+        }
+        textarea:focus ~ .highlight  {
+            animation:inputHighlighter 0.3s ease;
+        }
+
+        /* ANIMATIONS ================ */
+        @keyframes inputHighlighter  {
+            from   { background:#5264AE; }
+            to     { width:0; background:transparent; }
+        }
+    }
+
+}
+
+.aboutImgSection {
+    background: $orange;
+    flex: 1 1 250px;
+
+    .aboutImgContainer {
+        margin: 0 auto;
+        bottom: 0px;
+        position: relative;
+        max-width: 415px;
+        height: 362px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        #colorCircles {
+            width: 415px;
+            position: absolute;
+        }
+        #headshot {
+            width: 250px;
+            z-index: 999;
+        }
+    }
+
+    .aboutName {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+
+        .name {
+            font-size: 3.6rem;
+            font-weight: 700;
+            color: $textBlack;
+            margin: 30px 0 0;
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin: 60px 80px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $white;
+    padding: 20px 50px;
+    border-radius: 40px;
+    background-color: #0d0c0c;
+    align-self: center;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+        background: $orange;
+        color: $textBlack;
+        transform: scale(1.1);
+        transition: all 0.3s;
+    }
+}
+
+
+.info {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .infoLeft, .infoRight {
+        padding: 10px 0;
+        flex: 1 1 auto;
+        font-size: 2rem;
+    }
+    .infoLeft {
+        font-weight: 700;
+    }
+}
+
+.aboutSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .aboutSocialTitle {
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        
+        p {
+            margin: 0;
+        }
+    }
+    
+    .aboutSocialContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .socialIcons {
+        font-size: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 20px;
+
+        .icon {
+            color: $orange;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: $textGray;
+            margin: 0 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: white;
+                padding: 15px;
+
+                &:hover {
+                    color: $textBlack;
+                }
+            }
+
+            &:nth-of-type(1) {
+                background: #892582;
+            }
+            &:nth-of-type(2) {
+                background: #f86b18;
+            }
+            &:nth-of-type(3) {
+                background: #0095c8;
+            }
+            &:nth-of-type(4) {
+                background: #97ca85;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .aboutImgSection {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contact {
+        .wrapper {
+            width: 100%;
+        }
+        .contactForm {
+            padding: 30px !important;
+        }
+    }
+}

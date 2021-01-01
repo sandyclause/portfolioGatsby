@@ -1,0 +1,43 @@
+header {
+    background-color: $blackBackground;
+    font-style: $primary-font;
+    height: 50vh;
+    position: relative;
+
+    .headerImgContainer {
+        bottom: -180px;
+        position: absolute;
+        max-width: 415px;
+        height: 362px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+
+        #colorCircles {
+            width: 415px;
+            position: absolute;
+        }
+        #headshot {
+            width: 250px;
+            z-index: 10;
+        }
+
+    }
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@media(max-width: 900px) {
+    header {
+        height: 45vh;
+    }
+}

@@ -1,0 +1,140 @@
+.navbar {
+    overflow:hidden;
+    height:80px;
+
+    display: flex;
+    justify-content: center;
+
+
+
+    .button {
+        background: $orange;
+        color: $textBlack;
+        text-decoration: none;
+        z-index: 90;
+        
+        &:hover {
+            background: $white;
+            color: $orange;
+            transform: scale(1);
+            border: none;
+        }
+    }
+    
+    li {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a {
+            text-decoration:none;
+            color:#f2f2f2;
+            text-align:center;
+            margin:14px 16px;
+            font-size:2rem;
+            line-height: 0px;
+            display: inline-block;
+        }
+    }
+
+    .open-slide {
+        z-index: 90;
+
+        .fa-bars {
+            color: $orange;
+            font-size: 5rem;
+            z-index: 90;
+        }
+    }
+}
+
+
+.navbar ul {
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    z-index: 90;
+}
+
+.navbar a:hover {
+    border-bottom: 8px solid $orange;
+    transition: all 0.3s;
+}
+
+.navbar .open-slide a {
+    border: none;
+}
+
+.side-nav {
+    height:100%;
+    width:0;
+    z-index:20;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    // padding-top:60px;
+    transition:0.5s;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.side-nav a {
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+    font-size: 3rem;
+}
+
+.side-nav a:hover {
+    color:$orange;
+}
+
+.side-nav .btn-close {
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+#main {
+    transition:margin-left 0.5s;
+    padding:20px;
+    overflow:hidden;
+    width:100%;
+}
+
+@media(max-width:900px) {
+    .navbar-nav {
+        display:none !important;
+    }
+    .navbar {
+        justify-content: flex-start;
+    }
+    .navbar .button {
+        display: none;
+    }
+    .side-nav {
+        position: fixed;
+    }
+    .open-slide {
+        position: fixed;
+    }
+}
+
+@media(min-width:900px) {
+    .open-slide {
+        display: none !important;
+    }
+    .btn-close {
+        display: none !important;
+    }
+}
