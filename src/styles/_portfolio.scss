@@ -7,18 +7,18 @@
     flex-flow: row wrap;
     justify-content: space-between;
 
-    .leftGroup, .rightGroup {
-        display: flex;
-        flex-flow: column nowrap;
+    // .leftGroup, .rightGroup {
+    //     display: flex;
+    //     flex-flow: column nowrap;
 
-        flex: 1 1 auto;
-        max-width: 540px;
-    }
+    //     flex: 1 1 auto;
+    //     max-width: 540px;
+    // }
 
-    .rightGroup {
-        margin-top: 240px;
-        margin-bottom: 490px;
-    }
+    // .rightGroup {
+    //     margin-top: 240px;
+    //     margin-bottom: 490px;
+    // }
 }
 
 .work {
@@ -50,7 +50,9 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             
-
+            .icon {
+                font-size: 5rem;
+            }
 
             a {
                 color: $white;
@@ -116,10 +118,10 @@
         justify-content: space-around;
         margin: 0 15px;
         
-        .leftGroup, .rightGroup {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+        // .leftGroup, .rightGroup {
+        //     margin-top: 0;
+        //     margin-bottom: 0;
+        // }
     }
 }
 
