@@ -62,12 +62,12 @@ const Portfolio = () => {
         <div className='workContainer'>
           {
             projectsData.allContentfulProjectPost.edges.map((edge, index) => {
-              const projectData = edge.node;
-              const githubLink = projectData.githubLink;
-              const projectTitle = projectData.projectTitle;
-              const techStack = projectData.techStack;
-              const imageUrl = projectData.projectImage.file.url;
-              const imageTitle = projectData.projectImage.title;
+              const projectDataNode = edge.node;
+              const githubLink = projectDataNode.githubLink;
+              const projectTitle = projectDataNode.projectTitle;
+              const techStack = projectDataNode.techStack;
+              const imageUrl = projectDataNode.projectImage.file.url;
+              const imageTitle = projectDataNode.projectImage.title;
 
               return (
                 <div className='work' key={index}>

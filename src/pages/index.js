@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Article from '../components/article'
 import Header from '../components/header'
 import Intro from '../components/intro'
 import Portfolio from '../components/portfolio'
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Intro />
       <Skills />
       <Portfolio />
+      <Article />
     </div>
   )
 }
