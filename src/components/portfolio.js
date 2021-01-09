@@ -19,13 +19,17 @@ const Portfolio = () => {
             techStack
             githubLink
             publishedDate(fromNow:true)
+            projectImage {
+              title
+              file {
+                url
+              }
+            }
           }
         }
       }
     }
   `);
-
-  console.log(projectsData)
 
   // <div className='work'>
   //   <figure className='workImg'>
@@ -62,11 +66,13 @@ const Portfolio = () => {
               const githubLink = projectData.githubLink;
               const projectTitle = projectData.projectTitle;
               const techStack = projectData.techStack;
+              const imageUrl = projectData.projectImage.file.url;
+              const imageTitle = projectData.projectImage.title;
 
               return (
                 <div className='work' key={index}>
                   <figure className='workImg'>
-                    <img src={colorCircles} />
+                    <img src={imageUrl} alt={imageTitle} />
                     <figcaption>
                       <a href={githubLink} target='_blank'>
                         <CallMadeIcon className='icon' />
