@@ -32,38 +32,20 @@
         flex: 1 1 220px;
         color: $white;
         
-        .fa-react {
-            color: #892582;
-        }
-        .fa-js {
-            color: #f86b18;
-        }
-        .fa-html5 {
-            color: #0095c8;
-        }
-        .fa-css3-alt {
-            color: #97ca85;
-        }
-        .fa-code-branch {
-            color: #872480;
-        }
-        .fa-github {
-            color: #f7bdc6;
-        }
-        .fa-sass {
-            color: #0095c8;
-        }
-        .fa-gulp {
-            color: #f5b211;
-        }
-
-        .fab, .fas {
-            font-size: 16rem;
-        }
-
         .skillsTitle {
             font-size: 2rem;
             font-weight: 700;
+        }
+    }
+    
+    .skillsCardImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        img {
+            width: 100%;
         }
     }
 }
