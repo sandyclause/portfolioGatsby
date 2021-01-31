@@ -31,28 +31,6 @@ const Portfolio = () => {
     }
   `);
 
-  // <div className='work'>
-  //   <figure className='workImg'>
-  //     <img src='./public/assets/comicCloud.png' />
-  //     <figcaption>
-  //       <a href='https://comicproject-b8126.firebaseapp.com/' target='_blank'>
-  //         <i className='fas fa-external-link-square-alt'></i>
-  //         <p>View Live</p>
-  //       </a>
-  //     </figcaption>
-  //   </figure>
-  //   <div className='workDescription'>
-  //     <h1>Comic Cloud</h1>
-  //     <ul>
-  //       <li>React</li>
-  //       <li>Firebase</li>
-  //       <li>Sass</li>
-  //       <li>
-  //         <a href='http://github.com/sandyclause/comicVine' target='_blank'>View on GitHub</a>
-  //       </li>
-  //     </ul>
-  //   </div>
-  // </div>
   return (
     <section className='portfolioSection' id='work'>
       <div className='wrapper'>
