@@ -1,8 +1,8 @@
 import * as React from 'react';
 import colorCircles from '../assets/images/colorCircles.png';
 import PolygonWithPhoto from '../assets/images/PolygonWithPhoto.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
 

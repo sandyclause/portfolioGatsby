@@ -1,7 +1,5 @@
 import { useStaticQuery } from 'gatsby';
 import * as React from 'react';
-import colorCircles from '../assets/images/colorCircles.png';
-import CallMadeIcon from '@material-ui/icons/CallMade';
 
 const Article = () => {
   const articleData = useStaticQuery(graphql`
