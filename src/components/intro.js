@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithubSquare, faTwitterSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithubSquare, faTwitterSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Intro = () => {
   return (
