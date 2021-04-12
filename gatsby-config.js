@@ -5,7 +5,8 @@ require('dotenv').config({path: `./.env.${env}`});
 
 module.exports = {
   siteMetadata: {
-    title: "portfolio-gatsby",
+    title: "Sandy Tian Portfolio",
+    siteUrl: 'https://www.sandytian.ca/',
   },
   plugins: [
     {

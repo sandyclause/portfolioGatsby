@@ -1,6 +1,7 @@
 import { useStaticQuery } from 'gatsby';
 import * as React from 'react';
 import CallMadeIcon from '@material-ui/icons/CallMade';
+import { graphql } from 'gatsby';
 
 const Portfolio = () => {
   const projectsData = useStaticQuery(graphql`

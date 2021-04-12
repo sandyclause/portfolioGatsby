@@ -1,6 +1,6 @@
 import * as React from 'react';
-import colorCircles from '../assets/images/colorCircles.png';
-import PolygonWithPhoto from '../assets/images/PolygonWithPhoto.png';
+import colorCircles from '../static/colorCircles.png';
+import PolygonWithPhoto from '../static/PolygonWithPhoto.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,7 +17,7 @@ const Contact = () => {
           </div>
           
           <form action="http://www.focuspocus.io/magic/328c8ab775bf3e4ebcc702f29ad4e948" method="POST"
-          enctype="multipart/form-data">
+          encType="multipart/form-data">
             <div className="group">
               <input type="text" name="name" required />
               <span className="highlight"></span>

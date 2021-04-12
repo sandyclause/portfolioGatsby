@@ -5,8 +5,6 @@
     display: flex;
     justify-content: center;
 
-
-
     .button {
         background: $orange;
         color: $textBlack;
@@ -49,6 +47,15 @@
     }
 }
 
+.navbarOpen {
+    display: none;
+}
+
+.navbarClose {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+}
 
 .navbar ul {
     list-style:none;
@@ -103,6 +110,14 @@
     right:22px;
     font-size:36px;
     margin-left:50px;
+}
+
+.sideNavOpen {
+    width: 100vw;
+}
+
+.sideNavClose {
+    width: 0;
 }
 
 #main {

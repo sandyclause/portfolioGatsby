@@ -1,11 +1,11 @@
 import * as React from 'react';
-import reactIcon from '../assets/images/reactIcon.png';
-import reduxIcon from '../assets/images/reduxIcon.png';
-import typescriptIcon from '../assets/images/typescriptIcon.png';
-import immutableJSIcon from '../assets/images/immutableJSIcon.png';
-import nodejsIcon from '../assets/images/nodejsIcon.png';
-import expressIcon from '../assets/images/expressIcon.png';
-import mongodbIcon from '../assets/images/mongodbIcon.png';
+import reactIcon from '../static/reactIcon.png';
+import reduxIcon from '../static/reduxIcon.png';
+import typescriptIcon from '../static/typescriptIcon.png';
+import immutableJSIcon from '../static/immutableJSIcon.png';
+import nodejsIcon from '../static/nodejsIcon.png';
+import expressIcon from '../static/expressIcon.png';
+import mongodbIcon from '../static/mongodbIcon.png';
 
 const Skills = () => {
   return (
