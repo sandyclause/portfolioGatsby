@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import colorCircles from '../static/colorCircles.png';
 import PolygonWithPhoto from '../static/PolygonWithPhoto.png';
 import Particles from 'react-particles-js';
 import { particleJSConfig } from '../constants';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
   const [open, toggleOpen] = useState(false);
@@ -27,27 +28,62 @@ const Header = () => {
             className='open-slide'
             onClick={handleToggle}
           >
-            <a href='#'>
-              <i className='fas fa-bars'></i>
-              <FontAwesomeIcon icon={faBars} size='1x' className='fab' />
-            </a>
+            <FontAwesomeIcon icon={faBars} size='1x' className='fab' />
           </span>
-        
           <ul className='navbar-nav'>
             <li>
-              <a href='#home'>Home</a>
+              <Link
+                to='home'
+                spy={true}
+                smooth={true}
+                duration={500}
+                className='navlink'
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href='#skills'>Skills</a>
+              <Link
+                to='skills'
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Skills
+              </Link>
             </li>
             <li>
-              <a href='#work'>Portfolio</a>
+              <Link
+                to='work'
+                spy={true}
+                smooth={true}
+                duration={500}
+                className='navlink'
+              >
+                Portfolio
+              </Link>
             </li>
             <li>
-              <a href='#blog'>Blog</a>
+              <Link
+                to='blog'
+                spy={true}
+                smooth={true}
+                duration={500}
+                className='navlink'
+              >
+                Blog
+              </Link>
             </li>
             <li>
-              <a href='#contact'>Contact</a>
+              <Link
+                to='contact'
+                spy={true}
+                smooth={true}
+                duration={500}
+                className='navlink'
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 
@@ -56,11 +92,57 @@ const Header = () => {
         
         <div id='side-menu' className={open ? 'side-nav sideNavOpen' : 'side-nav sideNavClose'}>
           <a href='#' className='btn-close' onClick={closeNav}>&times;</a>
-          <a href='#home' className='link'>Home</a>
-          <a href='#skills' className='link'>Skills</a>
-          <a href='#work' className='link'>Portfolio</a>
-          <a href='#blog' className='link'>Blog</a>
-          <a href='#contact' className='link'>Contact</a>
+          
+          <Link
+            to='home'
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='navlink'
+            onClick={closeNav}
+          >
+            Home
+          </Link>
+          <Link
+            to='skills'
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='navlink'
+            onClick={closeNav}
+          >
+            Skills
+          </Link>
+          <Link
+            to='work'
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='navlink'
+            onClick={closeNav}
+          >
+            Portfolio
+          </Link>
+          <Link
+            to='blog'
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='navlink'
+            onClick={closeNav}
+          >
+            Blog
+          </Link>
+          <Link
+            to='contact'
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='navlink'
+            onClick={closeNav}
+          >
+            Contact
+          </Link>
         </div>
         <div className='headerImgContainer'>
           <img id='colorCircles' src={colorCircles} alt='colorful circles' />

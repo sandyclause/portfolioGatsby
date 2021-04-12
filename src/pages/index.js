@@ -7,7 +7,6 @@ import Skills from '../components/skills';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import '../styles/styles.scss';
-import { Helmet } from 'react-helmet';
 
 // markup
 const IndexPage = () => {
@@ -20,14 +19,6 @@ const IndexPage = () => {
       <Article />
       <Contact />
       <Footer />
-      <Helmet>
-        {/* <script type='text/javascript'>
-          {
-            console.log('test')
-          }
-        </script> */}
-        <script src='../navScript.js' type='text/javascript' />
-      </Helmet>
     </div>
   )
 }

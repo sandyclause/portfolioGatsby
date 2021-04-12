@@ -73,6 +73,10 @@
     border: none;
 }
 
+.navbar .fab {
+    cursor: pointer;
+}
+
 .side-nav {
     height:100%;
     width:0;
@@ -125,6 +129,10 @@
     padding:20px;
     overflow:hidden;
     width:100%;
+}
+
+.navlink {
+    cursor: pointer;
 }
 
 @media(max-width:900px) {
