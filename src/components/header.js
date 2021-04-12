@@ -48,6 +48,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                className='navlink'
               >
                 Skills
               </Link>
