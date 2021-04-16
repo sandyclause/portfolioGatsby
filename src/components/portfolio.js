@@ -18,6 +18,7 @@ const Portfolio = () => {
             slug
             techStack
             githubLink
+            projectLink
             publishedDate(fromNow:true)
             projectImage {
               title
@@ -42,6 +43,7 @@ const Portfolio = () => {
             projectsData.allContentfulProjectPost.edges.map((edge, index) => {
               const projectDataNode = edge.node;
               const githubLink = projectDataNode.githubLink;
+              const projectLink = projectDataNode.projectLink;
               const projectTitle = projectDataNode.projectTitle;
               const techStack = projectDataNode.techStack;
               const imageUrl = projectDataNode.projectImage.file.url;
@@ -52,7 +54,7 @@ const Portfolio = () => {
                   <figure className='workImg'>
                     <img src={imageUrl} alt={imageTitle} />
                     <figcaption>
-                      <a href={githubLink} target='_blank'>
+                      <a href={projectLink} target='_blank'>
                         <CallMadeIcon className='icon' />
                         <p>View Live</p>
                       </a>
@@ -65,7 +67,7 @@ const Portfolio = () => {
                         {techStack}
                       </li>
                       <li>
-                        <a href='http://github.com/sandyclause/comicVine' target='_blank'>View on GitHub</a>
+                        <a href={githubLink} target='_blank'>View on GitHub</a>
                       </li>
                     </ul>
                   </div>
